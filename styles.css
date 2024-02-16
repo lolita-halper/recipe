@@ -110,6 +110,7 @@ nav {
 	background-color: var(--white);
 	width: 100%;
 	box-shadow: var(--box-shadow-sm);
+	margin-bottom: 20px;
 }
 nav a {
     align-items: center;
@@ -123,6 +124,15 @@ nav h2 {
 	visibility: hidden;
 	font-size: 1px;
 }
+li:a {
+    text-transform: uppercase;
+    font-size: var(--font-size-p-dd-li-nav-input);
+    position: absolute;
+    z-index: 2;
+    top: 0; 
+    left: 25%;
+}
+
 
 /* ----------HAMBURGER NAV BAR---------- */
 
