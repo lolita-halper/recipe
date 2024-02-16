@@ -55,11 +55,15 @@ table {
     --dk-blue-green: #7abfbf;
     --lt-blue-green: rgba(122, 191, 191, .5);
     --orange: #eb5428;
-	--h1-h2-h3-fonts: Bebas Neu, Helvetica, sans-serif; 
+	--h1-h2-h3-fonts: Bebas Neue, Helvetica, sans-serif; 
 	--body-font: Montserrat,Arial, sans-serif;
 	--h1-font-size: 40px;
 	--h2-font-size: 30px;
 	--h3-font-size: 25px;
+	--font-size-nav-menu-social-footer: 20px;
+	--font-size-p-dd-li-nav-input: 16px;
+	--font-size-dt: 16px;
+
 }
 
 * {
