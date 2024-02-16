@@ -47,7 +47,7 @@ table {
 	border-spacing: 0;
 }
 
-/*---------------------MY CSS-------------------*/
+/*----------MY CSS----------*/
 
 :root {
     --drk-gray-blk: #0D0D0D;
@@ -63,7 +63,6 @@ table {
 	--font-size-nav-menu-social-footer: 20px;
 	--font-size-p-dd-li-nav-input: 16px;
 	--font-size-dt: 16px;
-
 }
 
 * {
@@ -71,7 +70,6 @@ table {
     margin: 0;
     padding: 0;
 }
-
 html {
     background-color: var(--lt-blue-green);
 }
@@ -79,16 +77,19 @@ body {
 	width: 414px;
 	background-color: var(--lt-gray);
 	margin: 0 auto;
+	font-family: var(--body-font);
 }
 h1 {
-font-family: var(--h1-h2-h3-font);
-font-size: var(--h1-font-size);
+	font-family: var(--h1-h2-h3-font);
+	font-size: var(--h1-font-size);
 }
 h2 {
-	
+	font-family: var(--h1-h2-h3-font);
+	font-size: var(--h2-font-size);
 }
 h3 {
-
+	font-family: var(--h1-h2-h3-font);
+	font-size: var(--h3-font-size);
 }
 p {
 
