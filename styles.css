@@ -103,16 +103,18 @@ p {
 }
 
 /*-------------- MAIN NAV -------------*/
+nav h2 {
+	visibility: hidden;
+	font-size: 1px;
+}
 nav {
-	display: grid;
-	grid-row: 1fr;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-row: 1/2;
+	grid-template-columns: 25% 50% 25%;
 	top: 0;
-	position:absolute;
+	position:relative;
 	background-color: var(--white);
-	width: 100%;
 	box-shadow: var(--box-shadow-sm);
-	margin-bottom: 20px;
+	padding-left: 20px;
 }
 nav a {
     align-items: center;
@@ -122,10 +124,7 @@ nav a {
     padding: 5px;
     display: block;
 }
-nav h2 {
-	visibility: hidden;
-	font-size: 1px;
-}
+
 li a {
     text-transform: uppercase;
     color: var(--orange);
