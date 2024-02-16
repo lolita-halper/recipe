@@ -101,6 +101,8 @@ h3 {
 p {
 
 }
+
+/*-------------- MAIN NAV -------------*/
 nav {
 	display: grid;
 	grid-row: 1fr;
@@ -124,13 +126,17 @@ nav h2 {
 	visibility: hidden;
 	font-size: 1px;
 }
-li:a {
+li a {
     text-transform: uppercase;
+    color: var(--orange);
     font-size: var(--font-size-p-dd-li-nav-input);
     position: absolute;
     z-index: 2;
     top: 0; 
     left: 25%;
+}
+li img {
+    width: 40px;
 }
 
 
