@@ -50,19 +50,25 @@ table {
 /*----------MY CSS----------*/
 
 :root {
+	--white:#ffffff;
     --drk-gray-blk: #0D0D0D;
     --lt-gray: #f2f2f2;
     --dk-blue-green: #7abfbf;
     --lt-blue-green: rgba(122, 191, 191, .5);
     --orange: #eb5428;
+	--med-gray: #b1b1b1;
 	--h1-h2-h3-font: Bebas Neue, Helvetica, sans-serif; 
-	--body-font: Montserrat,Arial, sans-serif;
+	--body-font: Montserrat,Verdana, sans-serif;
 	--h1-font-size: 40px;
 	--h2-font-size: 30px;
 	--h3-font-size: 25px;
 	--font-size-nav-menu-social-footer: 20px;
 	--font-size-p-dd-li-nav-input: 16px;
 	--font-size-dt: 16px;
+	--filter-shadow-sm: drop-shadow(-3px 3px 7px var(--med-gray));
+	--filter-shadow-lg: drop-shadow(-6px 6px 10px var(--med-gray));
+	--box-shadow-sm: -0 2px 4px var(--med-gray);
+	--box-shadow-lg: -6px 6px 10px var(--med-gray);
 }
 
 * {
@@ -78,6 +84,7 @@ body {
 	background-color: var(--lt-gray);
 	margin: 0 auto;
 	font-family: var(--body-font);
+	position: relative;
 }
 h1 {
 	font-family: var(--h1-h2-h3-font);
@@ -94,7 +101,89 @@ h3 {
 p {
 
 }
+nav {
+	display: grid;
+	grid-row: 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	top: 0;
+	position:absolute;
+	background-color: var(--white);
+	width: 100%;
+	box-shadow: var(--box-shadow-sm);
+}
+nav a {
+    align-items: center;
+    justify-content: start;
+    text-decoration: none;
+    color: var(--white);
+    padding: 5px;
+    display: block;
+}
+nav h2 {
+	visibility: hidden;
+	font-size: 1px;
+}
 
-header {
+/* ----------HAMBURGER NAV BAR---------- */
 
+ul {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+label {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    cursor: pointer;
+    display: inline-block;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+label span {
+    background-color: #ffffff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background-color .2s ease-out;
+    width: 18px;
+}
+label span:before, label span:after {
+    background: #ffffff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+label span:before {
+    top: 5px;
+}
+label span:after {
+    top: -5px;
+}
+input {
+    display: none;
+}
+input:checked ~ ul {
+    max-height: 500px;
+}
+input:checked ~ label span {
+    background: transparent;
+}
+input:checked ~ label span:before {
+    transform: rotate(-45deg);
+}
+input:checked ~ label span:after {
+    transform: rotate(45deg);
+}
+input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+    top: 0;
+}
+main {
+    grid-row: 3/4;
+    padding-top: 20px;
 }
