@@ -208,28 +208,32 @@ main {
     padding-top: 20px;
 }
 
-header {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-}
 header h1 {
     grid-row: 1/2;
     grid-column: 1/5;
     text-align: center;
     margin-top: 20px;
 }
-menu a {
-    text-decoration: none;
+header li {
+    list-style-type: none;
 }
 menu {
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     padding: 20px;
     margin: 0 auto;
 }
 .save {
     grid-row: 2/3;
     grid-column: 1/2;
+    align-items: start;
+    justify-content: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--orange);
+    font-weight: bold;
+
 }
 .share {
     grid-row: 2/3;
