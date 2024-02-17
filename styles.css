@@ -58,11 +58,12 @@ table {
     --orange: #eb5428;
 	--med-gray: #b1b1b1;
 	--h1-h2-h3-font: Bebas Neue, Helvetica, sans-serif; 
+    --navA-navSpan-MenuLi-SocLi-Footer-Font: Bebas Neue, Helvetica, sans-serif;
 	--body-font: Montserrat,Verdana, sans-serif;
 	--h1-font-size: 40px;
 	--h2-font-size: 30px;
 	--h3-font-size: 25px;
-	--font-size-nav-menu-social-footer: 20px;
+	--font-size-navSpan-NavA-menuLi-socLi-footer: 20px;
 	--font-size-p-dd-li-nav-input: 16px;
 	--font-size-dt: 16px;
 	--filter-shadow-sm: drop-shadow(-3px 3px 7px var(--med-gray));
@@ -220,20 +221,29 @@ header li {
 menu {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     padding: 20px;
     margin: 0 auto;
+}
+menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--orange);
+    font-weight: bold;
+    font-family: var(--navA-navSpan-MenuLi-SocLi-Footer-Font);
+    margin-top: 20px;
+    vertical-align: middle;
 }
 .save {
     grid-row: 2/3;
     grid-column: 1/2;
     align-items: start;
     justify-content: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: var(--orange);
-    font-weight: bold;
-
+    vertical-align:middle;
+}
+.save a {
+    grid-row: 1/2;
+    grid-column: 2/3;
 }
 .share {
     grid-row: 2/3;
