@@ -58,14 +58,15 @@ table {
     --orange: #eb5428;
 	--med-gray: #b1b1b1;
 	--h1-h2-h3-font: Bebas Neue, Helvetica, sans-serif; 
-    --navA-navSpan-MenuLi-SocLi-Footer-Font: Bebas Neue, Helvetica, sans-serif;
-	--body-font: Montserrat,Verdana, sans-serif;
-	--h1-font-size: 40px;
+    --h1-font-size: 40px;
 	--h2-font-size: 30px;
 	--h3-font-size: 25px;
-	--font-size-navSpan-NavA-menuLi-socLi-footer: 20px;
-	--font-size-p-dd-li-nav-input: 16px;
-	--font-size-dt: 16px;
+    --navSpan-navA-menuLi-socLi-footer-font: Bebas Neue, Helvetica, sans-serif;
+    --navSpan-navA-menuLi-socLi-footer-font-size: 20px;
+    --p-dd-li-nav-input-font: Montserrat,Verdana, sans-serif;
+    --p-dd-li-nav-input-font-size: 16px;
+    --dt-font: Montserrat,Verdana, sans-serif; 
+	--dt-font-size: 16px;
 	--filter-shadow-sm: drop-shadow(-3px 3px 7px var(--med-gray));
 	--filter-shadow-lg: drop-shadow(-6px 6px 10px var(--med-gray));
 	--box-shadow-sm: -0 2px 4px var(--med-gray);
@@ -88,23 +89,24 @@ body {
 	width: 414px;
 	background-color: var(--lt-gray);
 	margin: 0 auto;
-    font-size: var(--font-size-p-dd-li-nav-input);
-	font-family: var(--body-font);
+    font-family: var(--p-dd-li-nav-input-font);
+    font-size: var(--p-dd-li-nav-input-font-size);
 }
 h1 {
-	font-family: var(--h1-h2-h3-font);
 	font-size: var(--h1-font-size);
 }
 h2 {
-	font-family: var(--h1-h2-h3-font);
 	font-size: var(--h2-font-size);
 }
 h3 {
-	font-family: var(--h1-h2-h3-font);
 	font-size: var(--h3-font-size);
 }
+h1, h2, h3 {
+    font-family: var(--h1-h2-h3-font);
+    text-align: center;
+}
 p {
-
+    line-height: 1.5em;
 }
 
 /*----- MAIN NAV -----*/
@@ -125,6 +127,8 @@ nav a {
     color: var(--white);
     padding: 5px;
     display: block;
+    font-size: var(--navSpan-navA-menuLi-socLi-footer-font-size);
+    font-family: var(--navSpan-navA-menuLi-socLi-footer-font);
 }
 
 nav h2 {
@@ -228,6 +232,9 @@ header img {
     margin: 0 auto;
     margin-top: 10px;;
 }
+header p {
+    padding: 10px;
+}
 menu {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -242,8 +249,8 @@ menu a {
     text-decoration: none;
     text-transform: uppercase;
     color: var(--orange);
-    font-weight: bold;
-    font-family: var(--navA-navSpan-MenuLi-SocLi-Footer-Font);  
+    font-family: var(--navSpan-navA-menuLi-socLi-footer-font);
+    font-size: var(--navSpan-navA-menuLi-socLi-footer-font-size); 
 }
 #save {
     grid-row: 2/3;
