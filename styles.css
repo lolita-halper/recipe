@@ -107,7 +107,8 @@ p {
 
 }
 
-/*-------------- MAIN NAV -------------*/
+/*----- MAIN NAV -----*/
+
 nav {
 	grid-row: 1/2;
 	grid-template-columns: 25% 50% 25%;
@@ -140,14 +141,14 @@ nav h2 {
     left: 25%;
 }*/
 
-li img {
+/*li img {
     width: 40px;
-}
+}*/
 
+/*----- END MAIN NAV -----*/
+/* ----- HAMBURGER NAV BAR ----- */
 
-/* ----------HAMBURGER NAV BAR---------- */
-
-ul {
+/*ul {
     grid-column-start: 1;
     grid-column-end: 2;
     overflow: hidden;
@@ -203,11 +204,17 @@ input:checked ~ label span:after {
 }
 input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
     top: 0;
-}
+}*/
+/*----- END HAMBURGER NAV -----*/
+/*----- MAIN -----*/
+
 main {
     grid-row: 3/4;
     padding-top: 20px;
 }
+
+/*----- END MAIN -----*/
+/*----- HEADER -----*/
 
 header h1 {
     grid-row: 1/2;
@@ -215,53 +222,38 @@ header h1 {
     text-align: center;
     margin-top: 20px;
 }
-header li {
-    list-style-type: none;
-}
 menu {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    padding: 20px;
-    margin: 0 auto;
+    list-style-type: none;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
+
 menu a {
     text-decoration: none;
     text-transform: uppercase;
     color: var(--orange);
     font-weight: bold;
-    font-family: var(--navA-navSpan-MenuLi-SocLi-Footer-Font);
-    margin-top: 20px;
-    vertical-align: middle;
+    font-family: var(--navA-navSpan-MenuLi-SocLi-Footer-Font);  
 }
-.save {
+#save {
     grid-row: 2/3;
     grid-column: 1/2;
-    align-items: start;
-    justify-content: center;
-    vertical-align:middle;
 }
-.save a {
-    grid-row: 1/2;
-    grid-column: 2/3;
-}
-.share {
+#share {
     grid-row: 2/3;
     grid-column: 2/3;
 }
-.print {
+#print {
+    display: grid;
     grid-row: 2/3;
     grid-column: 3/4;
 }
-.recipe {
+#recipe {
     grid-row: 2/3;
     grid-column: 4/5;
-}
-.pargOne {
-    grid-row: 3/4;
-    grid-column: 1/5;
-}
-.pargTwo {
-    grid-row:4/5;
-    grid-column: 1/5;
 }
