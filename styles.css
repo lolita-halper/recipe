@@ -129,8 +129,7 @@ nav h2 {
 	visibility: hidden;
 	height: 1px;
 }
-
-li a {
+/*li a {
     text-transform: uppercase;
     color: var(--orange);
     font-size: var(--font-size-p-dd-li-nav-input);
@@ -138,7 +137,8 @@ li a {
     z-index: 2;
     top: 0; 
     left: 25%;
-}
+}*/
+
 li img {
     width: 40px;
 }
