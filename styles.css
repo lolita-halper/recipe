@@ -141,9 +141,9 @@ nav h2 {
     left: 25%;
 }*/
 
-/*li img {
+li img {
     width: 40px;
-}*/
+}
 
 /*----- END MAIN NAV -----*/
 /* ----- HAMBURGER NAV BAR ----- */
@@ -211,6 +211,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 main {
     grid-row: 3/4;
     padding-top: 20px;
+    padding: 10px;
 }
 
 /*----- END MAIN -----*/
@@ -222,17 +223,21 @@ header h1 {
     text-align: center;
     margin-top: 20px;
 }
+header img {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;;
+}
 menu {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 1fr;
     list-style-type: none;
     padding-top: 20px;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
-
 menu a {
     text-decoration: none;
     text-transform: uppercase;
@@ -249,7 +254,6 @@ menu a {
     grid-column: 2/3;
 }
 #print {
-    display: grid;
     grid-row: 2/3;
     grid-column: 3/4;
 }
