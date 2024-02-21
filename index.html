@@ -104,16 +104,22 @@
     </section>
     
     <aside>
+        <section></section>
         <h2>Need some side dishes?</h2>
-        <section class="dishes1">
+        <div class="dishes-1">
             <h3>Mexican Rice</h3>
-            <section>
-                <img src="images/mexican-rice.png" alt="Delicious plate of Mexican rice topped with slices of lime">
-                <div class="rating">
-                    <p>Traditional recipe with a twist.</p>
-                    <p>Rating<span>&#9733;&#9733;&#9733;&#9733;&#9733;</span></p>
-                </div>
-            </section>
+            <dl>
+                <dt>
+                    Traditional recipe with a twist.
+                </dt>
+                <dd>
+                    Rating<span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                </dd>
+            </dl>
+        </div>
+        <img src="images/mexican-rice.png" alt="Delicious plate of Mexican rice topped with slices of lime">
+               
+        </section>
         </section>
         <section class="dishes2">
             <h3>Salsa</h3>
@@ -193,42 +199,44 @@
 
 <footer>
     <h2>Connect</h2>
-    <section>
+    <section class="socialMedia">
         <h3> Social Media Links</h3>
-        <ul>
-            <li id="facebook">
+        <menu>
+            <li id="facebook"><a href="#facebook">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-                </svg>
+                </svg><br>facebook</a>
             </li>
-            <li id="instagram">
+            <li id="instagram"><a href="#instagram">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <rect x="4" y="4" width="16" height="16" rx="4" />
                 <circle cx="12" cy="12" r="3" />
                 <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
-                </svg>
+                </svg><br>instagram</a>
             </li>
-            <li id="youtube">
+            <li id="youtube"><a href="#youtube">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <rect x="3" y="5" width="18" height="14" rx="4" />
                 <path d="M10 9l5 3l-5 3z" />
-                </svg>
+                </svg><br>youtube</a>
             </li>
-            <li id="tiktok">
+            <li id="tiktok"><a href="#tiktok">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tiktok" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <path d="M9 12a4 4 0 1 0 4 4v-12a5 5 0 0 0 5 5" />
-                </svg>
+                </svg><br>tiktok</a>
             </li>
-        </ul>
+        </menu>
     </section>
-    <section>
+    <section class="eventEats">
         <h3>Good Eats</h3> 
-        <small>Copyright 2022 </small>
-        <p>Taco Cheesington</p>
+        <!--<div class="copyright">-->
+            <small>Copyright 2022 </small>
+            <p>Taco Cheesington</p>
+        <!--</div>-->
         <img src="images/taco-cheesington.png" alt="The chef putting on the final touches to a plate of taco">
     </section>
 </footer>
