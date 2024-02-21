@@ -352,7 +352,10 @@ form {
 
 /*----- END FORM -----*/
 /*----- FOOTER -----*/
-
+footer h2, h3 {
+	visibility: hidden;
+	height: 1px;
+}
 footer {
     display: grid;
     grid-template-columns: 1fr;
@@ -360,91 +363,32 @@ footer {
     list-style-type: none;
     padding-top: 20px;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-footer a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: var(--orange);
-    font-family: var(--navSpan-navA-menuLi-socLi-footer-font);
-    font-size: var(--navSpan-navA-menuLi-socLi-footer-font-size); 
 }
 .socialMedia {
-   
+   grid-row: 1;
 }
-.eventEats img {
-  
-    position: relative;
-    margin-bottom: 40px;
-  justify-content: center;
-}
-.eventEats p {
-   
-    position: absolute;
-}
-footer img {
+footer img{
     width: 200px;
+    justify-content: center;
+}
+.tacoCheesington{
+    grid-row: 2;
+    margin: 0 auto
+}
+.eventEats {
     margin: 0 auto;
-    margin-top: 0px;
+    grid-row: 3;
 }
-footer h2, h3 {
-	visibility: hidden;
-	height: 1px;
-}
-footer small, p {
+footer p, small{
+    grid-row: 3;
     font-family: var(--navSpan-navA-menuLi-socLi-footer-font);
     font-size: var(--navSpan-navA-menuLi-socLi-footer-font-size);
     text-align: center;
-}
 
-
-/*--for footer--
-
-header h1 {
-    grid-row: 1/2;
-    grid-column: 1/5;
-    text-align: center;
-    margin-top: 20px;
-}
-header img {
-    width: 100%;
     margin: 0 auto;
-    margin-top: 10px;;
+   /* position: relative;
+    top: 250px;*/
 }
-header p {
-    padding: 10px;
-}
-menu {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-    list-style-type: none;
-    padding-top: 20px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-menu a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: var(--orange);
-    font-family: var(--navSpan-navA-menuLi-socLi-footer-font);
-    font-size: var(--navSpan-navA-menuLi-socLi-footer-font-size); 
-}
-#save {
-    grid-row: 2/3;
-    grid-column: 1/2;
-}
-#share {
-    grid-row: 2/3;
-    grid-column: 2/3;
-}
-#print {
-    grid-row: 2/3;
-    grid-column: 3/4;
-}
-#recipe {
-    grid-row: 2/3;
-    grid-column: 4/5;
-}*/
+
+
+
