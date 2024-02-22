@@ -271,19 +271,19 @@ main {
     padding-top: 20px;
     
 }
-dl {
+.details dl {
     display: grid;
     grid-template-columns: max-content auto;
     column-gap: 10px;
     line-height: 1.35em;
 }
-dt {
+.details dt {
     grid-column-start: 1;
     font-family: var(--dt-font);
     font-size: var(--dt-font-size);
     font-weight: 700;
 }
-dd {
+.details dd {
     grid-column-start: 2;
 }
 #details, #ingredients, #directions {
@@ -306,36 +306,48 @@ dd {
 /*----- ASIDE -----*/
 aside {
     display: inline-grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: 1fr 2fr;
     background-color: var(--dk-blue-green);   
 }
 aside img {
     width: 100px;
 }
 aside h2 {
-    grid-row: 1/2;
+    grid-row: 1;
     grid-column: 1/3;
 }
-.dishes1 {
+.dish-item-1-img {
     grid-row: 2;
     grid-column: 1;
 }
-.dishes1 img {
+.dish-item-1 {
     grid-row: 2;
-    grid-column: 1/2;
+    grid-column: 2;
 }
-.rating {
-    grid-column: 2/3;
+.dish-item-2-img {
+    grid-row: 3;
+    grid-column: 1;
 }
-.dishes2 {
-    grid-row: 3/4;
+.dish-item-2 {
+    grid-row: 3;
+    grid-column: 2;
 }
-.dishes3 {
-    grid-row: 4/5;
+.dish-item-3-img {
+    grid-row: 4;
+    grid-column: 1;
 }
-.dishes4  {
-    grid-row: 5/6;
+.dish-item-3 {
+    grid-row: 4;
+    grid-column: 2;
+}
+.dish-item-4-img {
+    grid-row: 5;
+    grid-column: 1;
+}
+.dish-item-4 {
+    grid-row: 5;
+    grid-column: 2;
 }
 span::before {
     white-space: pre;
@@ -352,7 +364,11 @@ form {
 
 /*----- END FORM -----*/
 /*----- FOOTER -----*/
-footer h2, h3 {
+footer h2 {
+	visibility: hidden;
+	height: 1px;
+}
+footer h3 {
 	visibility: hidden;
 	height: 1px;
 }

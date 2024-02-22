@@ -105,51 +105,50 @@
     
     <aside>
         <h2>Need some side dishes?</h2>
-        <div class="dishes-1">
+        <section class="dish-item-1">
             <h3>Mexican Rice</h3>
             <dl>
-                <dt>
-                    Traditional recipe with a twist.
-                </dt>
+                <dt>Traditional recipe with a twist.</dt>
                 <dd>
                     Rating<span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
                 </dd>
             </dl>
+        </section>
+        <div class="dish-item-1-img">
+            <img src="images/mexican-rice.png" alt="Delicious plate of Mexican rice topped with slices of lime">
         </div>
-        <img src="images/mexican-rice.png" alt="Delicious plate of Mexican rice topped with slices of lime">
-               
-        </section>
-        </section>
-        <section class="dishes2">
+        <section class="dish-item-2">
             <h3>Salsa</h3>
-            <section>
+            <dl>
+                <dt>Just the right amount of spice.</dt>
+                <dd>Rating<span>&#9733;&#9733;&#9733;&#9733;&#9733;</span></dd>
+            </dl>
+        </section>
+        <div class="dish-item-2-img">
                 <img src="images/salsa.png" alt="Delicious wood tray with taquitos, pepper, tomatoes, garlic and a bowl of tortilla chips and salsa">
-                <div class="rating">
-                    <p>Just the right amount of spice.</p>
-                    <p>Rating<span>&#9733;&#9733;&#9733;&#9733;&#9733;</span></p>
-                </div>
-            </section>
-        </section>
-        <section class="dishes3">
+        </div>
+        <section class="dish-item-3">
             <h3>Guacamole</h3>
-            <section>
-                <img src="images/guacamole.png" alt="Delicious bowl of freshly made guacamole surrounded by tomatoes and tortilla chips">
-                <div>
-                    <p>Fresh and healthy.</p> 
-                    <p>Rating<span>&#9733;&#9733;&#9733;&#9733;&#9733;</span></p>
-                </div>
-            </section>
+            <dl>
+                <dt>Fresh and healthy.</dt>
+                <dd>Rating<span>&#9733;&#9733;&#9733;&#9733;&#9733;</span></dd>
+            </dl>
         </section>
-        <section class="dishes4">
-            <section>
-                <h3>Tortillas</h3>
-                <img src="images/tortillas.png" alt="Freshly made tortillas half wrapped in a baking towel to keep warm">
-                <div>
-                    <p> Easy to make and so good.</p>
-                    <p>Rating<span>&#9733;&#9733;&#9733;&#9733;&#9733;</span></p>
-                </div>
-            </section>
+        <div class="dish-item-3-img">
+            <img src="images/guacamole.png" alt="Delicious bowl of freshly made guacamole surrounded by tomatoes and tortilla chips">
+        </div>
+        <section class="dish-item-4">
+            <h3>Tortillas</h3>
+            <dl>
+                <dt>Easy to make and so good.</dt>
+                <dd>
+                     Rating<span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                </dd>
+            </dl>
         </section>
+        <div class="dish-item-4-img">
+                 <img src="images/tortillas.png" alt="Freshly made tortillas half wrapped in a baking towel to keep warm">
+        </div>
     </aside>
 </main>
 <nav>
@@ -185,7 +184,9 @@
           </svg></a></li>
     </ul>
 </nav>
-<form><!--still working on this section-->
+
+<!--still working on this form section-->
+<form>
     <h3>Search</h3>
     <label for ="site-search">Search the site:</label>
     <input type="search" id="site-search" name="q"></type>
@@ -232,60 +233,13 @@
     </section>
     <section class="eventEats">
         <h3>Good Eats</h3> 
-            <small>Copyright 2022 </small>
-            <p>Taco Cheesington</p>
+        <small>Copyright 2022 </small>
+        <p>Taco Cheesington</p>
     </section>
     <section class="tacoCheesington">
         <img src="images/taco-cheesington.png" alt="The chef putting on the final touches to a plate of taco">
     </section>
-
 </footer>
-
-
-
-<!-- ORIGINAL<footer>
-    <h2>Connect</h2>
-    <section class="socialMedia">
-        <h3> Social Media Links</h3>
-        <menu>
-            <li id="facebook"><a href="#facebook">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-                </svg><br>facebook</a>
-            </li>
-            <li id="instagram"><a href="#instagram">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <rect x="4" y="4" width="16" height="16" rx="4" />
-                <circle cx="12" cy="12" r="3" />
-                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
-                </svg><br>instagram</a>
-            </li>
-            <li id="youtube"><a href="#youtube">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <rect x="3" y="5" width="18" height="14" rx="4" />
-                <path d="M10 9l5 3l-5 3z" />
-                </svg><br>youtube</a>
-            </li>
-            <li id="tiktok"><a href="#tiktok">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tiktok" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <path d="M9 12a4 4 0 1 0 4 4v-12a5 5 0 0 0 5 5" />
-                </svg><br>tiktok</a>
-            </li>
-        </menu>
-    </section>
-    <section class="eventEats">
-        <h3>Good Eats</h3> 
-        <div class="copyright">-
-            <small>Copyright 2022 </small>
-            <p>Taco Cheesington</p>
-        </div>
-        <img src="images/taco-cheesington.png" alt="The chef putting on the final touches to a plate of taco">
-    </section>
-</footer>-->
 </body>
 </html>
 
