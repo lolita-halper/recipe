@@ -359,15 +359,16 @@ footer h2, h3 {
 footer {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 140px 200px 50px;
     list-style-type: none;
-    padding-top: 20px;
-    align-items: center;
+    margin: auto 0;
 }
 .socialMedia {
    grid-row: 1;
 }
 footer img{
+    display: grid;
+    align-items: center;
     width: 200px;
     justify-content: center;
 }
@@ -376,19 +377,9 @@ footer img{
     margin: 0 auto
 }
 .eventEats {
-    margin: 0 auto;
     grid-row: 3;
-}
-footer p, small{
-    grid-row: 3;
+    text-align: center;
     font-family: var(--navSpan-navA-menuLi-socLi-footer-font);
     font-size: var(--navSpan-navA-menuLi-socLi-footer-font-size);
-    text-align: center;
-
-    margin: 0 auto;
-   /* position: relative;
-    top: 250px;*/
 }
-
-
 
