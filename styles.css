@@ -269,6 +269,21 @@ menu a {
 main {
     padding-top: 20px;
 }
+.details dl {
+    display: flex;
+    flex-direction: row;
+    line-height: 1.35em;
+}
+dt {
+    font-family: var(--dt-font);
+    font-size: var(--dt-font-size);
+    font-weight: 700;
+}
+dd {
+    font-family: var(--p-dd-li-nav-input-font);
+    font-size: var(--p-dd-li-nav-input-font-size);
+}
+
 dl {
     line-height: 1.35em;
 }
@@ -278,7 +293,8 @@ dt {
     font-weight: 700;
 }
 dd {
-    
+    font-family: var(--p-dd-li-nav-input-font);
+    font-size: var(--p-dd-li-nav-input-font-size);
 }
 
 
@@ -303,7 +319,7 @@ dd {
 /*----- ASIDE -----*/
 aside {
     display: inline-grid;
-    grid-template-rows: repeat(5,1fr);
+    grid-template-rows: 50px 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 2fr;
     background-color: var(--dk-blue-green);   
     width: 100%;
