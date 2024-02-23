@@ -84,7 +84,7 @@ html {
 
 body {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-auto-rows: auto;
     grid-template-columns: repeat(auto-fill, minmax(414px, 1fr));
 	width: 414px;
@@ -127,11 +127,7 @@ dt {
 /*----- MAIN NAVIGATION -----*/
 
 nav {
-	grid-row: 1;
-	grid-template-columns: 25% 50% 25%;
     width: 414px;
-    padding-left: 20px;
-    padding-bottom: 15px;
 	background-color: var(--white);
 	box-shadow: var(--box-shadow-sm);
 	top: 0;
@@ -146,57 +142,42 @@ nav a {
     font-size: var(--navSpan-navA-menuLi-socLi-footer-font-size);
     font-family: var(--navSpan-navA-menuLi-socLi-footer-font);
 }
-
 nav h2 {
 	visibility: hidden;
 	height: 1px;
 }
-
 nav ul {
     text-align: center;
-    align-items: center;
-    justify-content: center;
-    grid-column-start: 1;
-    grid-column-end: 2;
     overflow: hidden;
     max-height: 0;
     transition: max-height .2s ease-out;
+    line-height: 3.2;
+}
+nav li:hover {
+    background-color: var(--lt-blue-green);
 }
 
 nav li:nth-of-type(1) a {
     background-color: var(--orange);
     position: absolute;
-    z-index: 3;
+    z-index: 2;
     top: 0; 
     left: 25%;
     width: 50%;
-    padding-bottom: 18px;
 }
 nav li:nth-of-type(9) a {
     color: var(--drk-gray-blk);
     position: absolute;
-    z-index: 3;
+    z-index: 2;
     top: 0; 
     left: 75%;
     width: 25%;
+    line-height: 1.35;
 }
-
-/*li a {
-    text-transform: uppercase;
-    color: var(--orange);
-    font-size: var(--font-size-p-dd-li-nav-input);
-    position: absolute;
-    z-index: 2;
-    top: 0; 
-    left: 25%;
-}*/
 
 /*----- END MAIN NAV -----*/
 
-
 /* ----- HAMBURGER NAV BAR ----- */
-
-
 
 /*nav label {
     text-decoration: none;
@@ -208,11 +189,11 @@ nav li:nth-of-type(9) a {
 }*/
 
 label {
-    grid-column-start: 1;
-    grid-column-end: 2;
+    /*grid-column-start: 1;
+    grid-column-end: 2;*/
     cursor: pointer;
     display: inline-block;
-    padding: 5px 10px;
+    padding-left: 10px;
     position: relative;
     user-select: none;
 }
@@ -223,6 +204,7 @@ label span {
     position: relative;
     transition: background-color .2s ease-out;
     width: 18px;
+    
 }
 label span:before, label span:after {
     display: block;
