@@ -89,6 +89,7 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(414px, 1fr));
 	width: 414px;
 	background-color: var(--lt-gray);
+    color: var(--drk-gray-blk);
 	margin: 0 auto;
     font-family: var(--p-dd-li-nav-input-font);
     font-size: var(--p-dd-li-nav-input-font-size);
@@ -106,6 +107,7 @@ h3 {
 }
 h1, h2, h3 {
     font-family: var(--h1-h2-h3-font);
+    color: var(--drk-gray-blk);
     text-align: center;
     padding: 10px 0;
 }
@@ -114,6 +116,9 @@ p {
 }
 dt {
     font-weight: 700;
+    font-family: var(--dt-font);
+    font-size: var(--dt-font-size);
+    color: var(--drk-gray-blk);
 }
 #details h2 {
     padding: 0 0 10px 0;
@@ -123,19 +128,18 @@ dt {
 
 nav {
 	grid-row: 1/2;
-	grid-template-columns: 25% 75%;
+	grid-template-columns: 25% 50% 25%;
     width: 414px;
-	top: 0;
-	position:fixed;
     padding-left: 20px;
+    padding-bottom: 15px;
 	background-color: var(--white);
 	box-shadow: var(--box-shadow-sm);
+	top: 0;
+	position:fixed;
     z-index: 2;
 }
 
 nav a {
-    align-items: center;
-    justify-content: center;
     text-decoration: none;
     color: var(--orange);
     display: block;
@@ -148,6 +152,33 @@ nav h2 {
 	height: 1px;
 }
 
+nav ul {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+nav li:nth-of-type(1) a {
+    background-color: var(--orange);
+    position: absolute;
+    z-index: 3;
+    top: 0; 
+    left: 25%;
+    width: 50%;
+}
+nav li:nth-of-type(9) a {
+    position: absolute;
+    z-index: 3;
+    top: 0; 
+    left: 75%;
+    width: 25%;
+}
+
 /*li a {
     text-transform: uppercase;
     color: var(--orange);
@@ -158,22 +189,12 @@ nav h2 {
     left: 25%;
 }*/
 
-li img {
-    width: 40px;
-}
-
 /*----- END MAIN NAV -----*/
 
 
 /* ----- HAMBURGER NAV BAR ----- */
 
-nav ul {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height .2s ease-out;
-}
+
 
 /*nav label {
     text-decoration: none;
@@ -189,7 +210,7 @@ label {
     grid-column-end: 2;
     cursor: pointer;
     display: inline-block;
-    padding: 5px 20px;
+    padding: 5px 10px;
     position: relative;
     user-select: none;
 }
@@ -202,8 +223,7 @@ label span {
     width: 18px;
 }
 label span:before, label span:after {
-    background: #ffffff;
-    content: '';
+    
     display: block;
     height: 100%;
     position: absolute;
@@ -237,19 +257,34 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 
 /*----- END HAMBURGER NAV -----*/
 
+/*----- FORM -----*/
+
+form {
+    top: 0;
+    position: absolute;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+form h3 {
+    visibility: hidden;
+    height: 1px;
+}
+
+/*----- END FORM -----*/
 
 /*------------- HEADER ------------*/
+
 header {
     position: relative;
 }
 header h1 {
-    margin-top: 100px;
+    padding-top: 175px;
 }
 
 header img {
     width: 100%;
     margin: 0 auto;
-    margin-top: 10px;;
+    margin-top: 10px;
 }
 
 header p {
@@ -261,7 +296,7 @@ menu {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
     list-style-type: none;
-    padding: 20px 10px 0 0;;
+    padding: 10px 10px 0 0;;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -425,21 +460,6 @@ aside h3 {
 }
 
 /*----- END MAIN -----*/
-
-
-/*----- FORM -----*/
-
-form {
-    top: 0;
-    position: absolute;
-    margin: 0 auto;
-}
-form h3 {
-    visibility: hidden;
-    height: 1px;
-}
-
-/*----- END FORM -----*/
 
 
 /*----- FOOTER -----*/
