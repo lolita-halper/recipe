@@ -119,27 +119,30 @@ dt {
     padding: 0 0 10px 0;
 }
 
-/*----- MAIN NAV -----*/
+/*----- MAIN NAVIGATION -----*/
 
 nav {
 	grid-row: 1/2;
 	grid-template-columns: 25% 75%;
+    width: 414px;
 	top: 0;
-	position:relative;
+	position:fixed;
     padding-left: 20px;
 	background-color: var(--white);
 	box-shadow: var(--box-shadow-sm);
+    z-index: 2;
 }
+
 nav a {
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     text-decoration: none;
     color: var(--orange);
-    padding: 5px;
     display: block;
     font-size: var(--navSpan-navA-menuLi-socLi-footer-font-size);
     font-family: var(--navSpan-navA-menuLi-socLi-footer-font);
 }
+
 nav h2 {
 	visibility: hidden;
 	height: 1px;
@@ -160,6 +163,8 @@ li img {
 }
 
 /*----- END MAIN NAV -----*/
+
+
 /* ----- HAMBURGER NAV BAR ----- */
 
 nav ul {
@@ -178,6 +183,7 @@ nav ul {
     font-size: var(--navSpan-navA-menuLi-socLi-footer-font-size);
     text-align: center;
 }*/
+
 label {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -228,24 +234,28 @@ input:checked ~ label span:after {
 input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
     top: 0;
 }
+
 /*----- END HAMBURGER NAV -----*/
 
-/*----- HEADER -----*/
 
+/*------------- HEADER ------------*/
+header {
+    position: relative;
+}
 header h1 {
-    grid-row: 1/2;
-    grid-column: 1/5;
-    text-align: center;
     margin-top: 100px;
 }
+
 header img {
     width: 100%;
     margin: 0 auto;
     margin-top: 10px;;
 }
+
 header p {
     padding: 10px;
 }
+
 menu {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -256,6 +266,7 @@ menu {
     justify-content: center;
     text-align: center;
 }
+
 menu a {
     text-decoration: none;
     text-transform: uppercase;
@@ -263,18 +274,22 @@ menu a {
     font-family: var(--navSpan-navA-menuLi-socLi-footer-font);
     font-size: var(--navSpan-navA-menuLi-socLi-footer-font-size); 
 }
+
 #save {
     grid-row: 2/3;
     grid-column: 1/2;
 }
+
 #share {
     grid-row: 2/3;
     grid-column: 2/3;
 }
+
 #print {
     grid-row: 2/3;
     grid-column: 3/4;
 }
+
 #recipe {
     grid-row: 2/3;
     grid-column: 4/5;
@@ -307,6 +322,7 @@ dd {
 #details, #ingredients, #directions {
     padding: 10px;
 }
+
 #ingredients ul {
     list-style-type: square;
     padding-left: 15px;
@@ -324,6 +340,7 @@ dd {
 }
 
 /*----- ASIDE -----*/
+
 aside {
     display: inline-grid;
     grid-template-rows: 50px 1fr 1fr 1fr 1fr;
@@ -409,13 +426,12 @@ aside h3 {
 
 /*----- END MAIN -----*/
 
+
 /*----- FORM -----*/
 
 form {
-    top: 100;
-    /*top: -2920px;*/
+    top: 0;
     position: absolute;
-    /*position:relative;*/
     margin: 0 auto;
 }
 form h3 {
