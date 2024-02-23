@@ -127,7 +127,7 @@ dt {
 /*----- MAIN NAVIGATION -----*/
 
 nav {
-	grid-row: 1/2;
+	grid-row: 1;
 	grid-template-columns: 25% 50% 25%;
     width: 414px;
     padding-left: 20px;
@@ -170,8 +170,10 @@ nav li:nth-of-type(1) a {
     top: 0; 
     left: 25%;
     width: 50%;
+    padding-bottom: 17px;
 }
 nav li:nth-of-type(9) a {
+    color: var(--drk-gray-blk);
     position: absolute;
     z-index: 3;
     top: 0; 
