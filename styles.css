@@ -151,7 +151,7 @@ nav ul {
     overflow: hidden;
     max-height: 0;
     transition: max-height .2s ease-out;
-    line-height: 3.2;
+    line-height: 3;
 }
 nav li:hover {
     background-color: var(--lt-blue-green);
@@ -161,9 +161,11 @@ nav li:nth-of-type(1) a {
     background-color: var(--orange);
     position: absolute;
     z-index: 2;
+    height: 86px;
     top: 0; 
     left: 25%;
     width: 50%;
+    padding-top: 10px;
 }
 nav li:nth-of-type(9) a {
     color: var(--drk-gray-blk);
