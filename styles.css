@@ -223,7 +223,6 @@ label span {
     width: 18px;
 }
 label span:before, label span:after {
-    
     display: block;
     height: 100%;
     position: absolute;
