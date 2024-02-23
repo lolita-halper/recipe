@@ -174,7 +174,8 @@ nav li:nth-of-type(9) a {
     top: 0; 
     left: 75%;
     width: 25%;
-    line-height: 1.35;
+    padding-top: 10px;
+    line-height: 1.15;
 }
 
 /*----- END MAIN NAV -----*/
