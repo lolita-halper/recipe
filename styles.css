@@ -526,8 +526,6 @@ footer img{
 
 /*---------- MEDIA QUERY 768PX----------*/
 
-
-/*----- MAIN NAVIGATION -----*/
 @media screen and (min-width: 768px) {
 
 body {
@@ -539,18 +537,16 @@ nav {
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: 75px 80px;
 }
-nav img {
-    width: 60px;
-    visibility: visible;
-}
-
 nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     position: absolute;
     overflow: visible;
     top: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    align-self: center;
+    line-height: 1.35;
+}
+nav img {
+    visibility: visible;
 }
 label span, input {
     display: none;
@@ -586,30 +582,19 @@ nav li:nth-of-type(9) a {
 
 /*------------- HEADER ------------*/
 
-header {
-    position: relative;
-}
 header h1 {
     padding-left: 10px;
-    text-align: left;
+    padding-bottom: 20px;
+    text-align:left;
 }
 header img {
-    width: 100%;
-    margin: 0 auto;
-    margin-top: -100px;
-}
-header p {
-    padding: 10px;
+    margin-top: -105px;
 }
 menu {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-    list-style-type: none;
-    padding: 10px 10px 0 0;;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    padding: 10px 10px 0 0;
+    background-color: rgba(255, 255, 255, .6);
+    position: relative;
+    z-index: 2;
 }
 
 menu a {
@@ -619,7 +604,6 @@ menu a {
     font-family: var(--navSpan-navA-menuLi-socLi-footer-font);
     font-size: var(--navSpan-navA-menuLi-socLi-footer-font-size); 
 }
-
 #save {
     grid-row: 2/3;
     grid-column: 1/2;
