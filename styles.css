@@ -177,6 +177,11 @@ nav li:nth-of-type(9) a {
     padding-top: 10px;
     line-height: 1.15;
 }
+.burgerMenu {
+    color: var(--drk-gray-blk);
+    font-family: var(--navSpan-navA-menuLi-socLi-footer-font);
+    font-size: var(--navSpan-navA-menuLi-socLi-footer-font-size);
+}
 
 /*----- END MAIN NAV -----*/
 
