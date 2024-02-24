@@ -154,7 +154,7 @@ nav ul {
     line-height: 3;
 }
 nav img {
-    width: 40px;
+    width: 60px;
     visibility: hidden;
 }
 nav li:hover {
@@ -539,6 +539,10 @@ nav {
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: 75px 80px;
 }
+nav img {
+    width: 60px;
+    visibility: visible;
+}
 
 nav ul {
     position: absolute;
@@ -552,7 +556,7 @@ label span, input {
     display: none;
 }
 nav li:hover {
-    background-color: var(--lt-blue-green);
+    background-color: none;
 }
 nav li:nth-of-type(1) a {
     background-color: var(--orange);
@@ -576,10 +580,6 @@ nav li:nth-of-type(9) a {
 }
 .burgerMenu {
     display none
-    color: var(--drk-gray-blk);
-    font-family: var(--navSpan-navA-menuLi-socLi-footer-font);
-    font-size: var(--navSpan-navA-menuLi-socLi-footer-font-size);
-    text-align: center;
 }
 
 /*----- END MAIN NAV -----*/
@@ -596,13 +596,11 @@ header h1 {
 header img {
     width: 100%;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: -100px;
 }
-
 header p {
     padding: 10px;
 }
-
 menu {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
