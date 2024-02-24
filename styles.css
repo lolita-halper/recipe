@@ -260,8 +260,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 .search-bar {
     top: 0;
     position: absolute;
-    width: 260
-    px;
+    width: 260px;
     left: 30%
 }   
 form h3 {
@@ -287,7 +286,7 @@ form h3 {
     top:0;
     right:0;
     padding: 1px 5px;
-    z-index: 2;
+    z-index: 1;
 }
 .search-bar input:focus + button .search-bar {
     color:var(--orange);
