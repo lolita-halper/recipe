@@ -253,18 +253,18 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 
 /*----- FORM -----*/
 
-form {
+.search-bar {
     top: 0;
     position: absolute;
-    margin: 0 auto;
-}
+    width: 200px;
+}   
 form h3 {
     visibility: hidden;
     height: 1px;
 }
 .search-bar input {
     margin: 0 auto;
-    width: 75%;
+    width: 100%;
     padding: 15px 60px 15px 10px;
     display: block;
     background-color: var(--white);
@@ -272,13 +272,20 @@ form h3 {
     border-radius: 2px;
 }
 .search-bar button {
+    background: transparent;
+    border: none;
     cursor: pointer;
     display: inline-block;
     font-size:var(--p-dd-li-nav-input-font-size);
-    padding: 5px ;
-    max-width: 200px;
-    color: var(--drk-gray-blk);
+    position: relative;
+    top:0;
+    right:0;
+    padding: 25px 20px;
+    z-index: 2;
 }
+.search-bar input:focus + button .search-bar {
+    color:var(--orange);
+  }
 
 /*----- END FORM -----*/
 
