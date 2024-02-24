@@ -257,11 +257,27 @@ form {
     top: 0;
     position: absolute;
     margin: 0 auto;
-    padding-top: 100px;
 }
 form h3 {
     visibility: hidden;
     height: 1px;
+}
+.search-bar input {
+    margin: 0 auto;
+    width: 75%;
+    padding: 15px 60px 15px 10px;
+    display: block;
+    background-color: var(--white);
+    border: 2px inset var(--orange);
+    border-radius: 2px;
+}
+.search-bar button {
+    cursor: pointer;
+    display: inline-block;
+    font-size:var(--p-dd-li-nav-input-font-size);
+    padding: 5px ;
+    max-width: 200px;
+    color: var(--drk-gray-blk);
 }
 
 /*----- END FORM -----*/
