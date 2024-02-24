@@ -153,6 +153,10 @@ nav ul {
     transition: max-height .2s ease-out;
     line-height: 3;
 }
+nav img {
+    width: 40px;
+    visibility: hidden;
+}
 nav li:hover {
     background-color: var(--lt-blue-green);
 }
@@ -256,7 +260,8 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 .search-bar {
     top: 0;
     position: absolute;
-    width: 250px;
+    width: 260
+    px;
     left: 30%
 }   
 form h3 {
@@ -265,7 +270,6 @@ form h3 {
 }
 .search-bar input {
     margin: 100px auto;
-    width: 100%;
     padding: 15px 60px 15px 10px;
     display: block;
     background-color: var(--white);
@@ -520,3 +524,137 @@ footer img{
     font-size: var(--navSpan-navA-menuLi-socLi-footer-font-size);
 }
 
+
+/*---------- MEDIA QUERY 768PX----------*/
+
+
+/*----- MAIN NAVIGATION -----*/
+@media screen and (min-width: 768px) {
+
+body {
+	width: 768px;
+}
+nav {
+    width: 768px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 75px 80px;
+}
+
+nav ul {
+    position: absolute;
+    overflow: visible;
+    top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-self: center;
+}
+label span, input {
+    display: none;
+}
+nav li:hover {
+    background-color: var(--lt-blue-green);
+}
+nav li:nth-of-type(1) a {
+    background-color: var(--orange);
+    position: absolute;
+    z-index: 2;
+    height: 70px;
+    width: 70px;
+    top: 0; 
+    left: 0;
+    padding-top: 5px;
+}
+nav li:nth-of-type(9) a {
+    color: var(--drk-gray-blk);
+    position: absolute;
+    z-index: 2;
+    top: 0; 
+    left: 75%;
+    width: 25%;
+    padding-top: 10px;
+    line-height: 1.15;
+}
+.burgerMenu {
+    display none
+    color: var(--drk-gray-blk);
+    font-family: var(--navSpan-navA-menuLi-socLi-footer-font);
+    font-size: var(--navSpan-navA-menuLi-socLi-footer-font-size);
+    text-align: center;
+}
+
+/*----- END MAIN NAV -----*/
+
+/*------------- HEADER ------------*/
+
+header {
+    position: relative;
+}
+header h1 {
+    padding-left: 10px;
+    text-align: left;
+}
+header img {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+header p {
+    padding: 10px;
+}
+
+menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    list-style-type: none;
+    padding: 10px 10px 0 0;;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--orange);
+    font-family: var(--navSpan-navA-menuLi-socLi-footer-font);
+    font-size: var(--navSpan-navA-menuLi-socLi-footer-font-size); 
+}
+
+#save {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+#share {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+#print {
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+
+#recipe {
+    grid-row: 2/3;
+    grid-column: 4/5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
