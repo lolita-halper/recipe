@@ -562,6 +562,7 @@ nav ul {
     position: absolute;
     line-height: 1.35;
     top: 0;
+    width: 100%;
 }
 nav img {
     visibility: visible;
@@ -681,6 +682,15 @@ footer {
     padding-top: 50px;
 }
 
+nav li:nth-of-type(1) a {
+    grid-row: 1;
+    grid-column: 1;
+    position: relative;
+    height: 80px;
+    width: 80px;
+    left: 0;
+    padding-left: 10px;
+}
 nav li:nth-of-type(2) a {
     grid-row: 2;
     grid-column: 1;
@@ -721,7 +731,6 @@ nav li:nth-of-type(5) a {
     padding-top: 10px;
     line-height: 1.15;
 }
-
 nav li:nth-of-type(6) a {
     grid-row: 2;
     grid-column: 5;
@@ -752,27 +761,18 @@ nav li:nth-of-type(8) a {
     padding-top: 10px;
     line-height: 1.15;
 }
-nav li:nth-of-type(1) a {
-    grid-row: 1;
-    grid-column: 1;
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    left: 0;
-    padding-left: 10px;
-}
 nav li:nth-of-type(9) a {
     grid-row: 1;
     grid-column: 7;
     position: absolute;
     top: 0; 
-    left: 0;
+    justify-content: center;
     width: 25%;
     padding-top: 10px;
     line-height: 1.15;
 }
 
-
+*/
 
 
 
