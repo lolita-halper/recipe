@@ -94,6 +94,7 @@ body {
     font-family: var(--p-dd-li-nav-input-font);
     font-size: var(--p-dd-li-nav-input-font-size);
     line-height: 1.35;
+    position: relative;
 }
 
 h1 {
