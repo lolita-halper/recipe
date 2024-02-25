@@ -692,17 +692,18 @@ menu {
 menu li {
     margin-bottom: 15px;
 }
-
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 15% 30%r 1fr;
     grid-auto-rows: auto;
 }
-
 #details {
     grid-row: 1;
     grid-column: 1/3;
+}
+dl {
+    justify-content: center;
 }
 #ingredients {
     grid-row: 2;
