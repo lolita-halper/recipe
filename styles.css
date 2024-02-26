@@ -540,20 +540,21 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(768px, 1fr));
 	width: 768px;
 }
+/*----- MAIN NAVIGATION -----*/
 nav {
     width: 768px;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 80px 90px 40px;
+    grid-template-rows: 80px 120px;
     z-index: 3;
 }
 nav a {
     display: grid;
 }
 nav ul {
-    display: grid;
+    /*display: grid;
     grid-template-columns: repeat(7,1fr);
-    grid-template-rows: 80px 90px 40px;
+    grid-template-rows: 80px 90px 40px;*/
     overflow: visible;
     position: absolute;
     line-height: 1.35;
@@ -570,9 +571,9 @@ label span, input {
     display: none;
 }
 nav li img:hover {
-    background-color: opacity;
-    transition: transform 0.3s ease-in-out;
-    transform: scale(1.3);
+    background-color: transparent;
+    /*transition: transform 0.3s ease-in-out;
+    transform: scale(1.3);*/
 }
 .burgerMenu {
     display: none;
@@ -605,7 +606,7 @@ nav li:nth-of-type(1) {
     width: 100%;
     height: 80px;
     top: 0;
-    background-color: var(--orange);
+    /*background-color: var(--orange);*/
 }
 nav li:nth-of-type(2) {
     grid-row: 3/4;
@@ -786,7 +787,7 @@ footer {
 
 
 
-/*---------- MEDIA QUERY 768PX----------*/
+/*------------- MEDIA QUERY 1280PX---------------*/
 
 @media screen and (min-width: 1280px) {
 
@@ -795,20 +796,27 @@ footer {
         grid-template-columns: repeat(auto-fill, minmax(1280px, 1fr));
         width: 1280px;
     }
+/*--------- MAIN NAVIGATION -------------*/
     nav {
         width: 1280px;
         display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 80px 90px 40px;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: 110px;
         z-index: 3;
     }
 
 
 
 
+/*------------- HEADER ------------*/
 
 
-
+header {
+    position: relative;
+}
+header h1 {
+    padding-top: 175px;
+}
 
 
 
