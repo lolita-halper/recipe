@@ -753,7 +753,7 @@ menu li {
     margin-bottom: 15px;
 }
 
-/*------------- MENU ------------*/
+/*------------- MAIN ------------*/
 
 main {
     display: grid;
@@ -798,6 +798,10 @@ aside h2 {
     grid-column: 1/5;
 }
 
+aside h3 {
+    text-align: left;
+}
+
 .dish-item-2-img {
     grid-row: 2;
     grid-column: 3;
@@ -824,10 +828,6 @@ aside h2 {
 .dish-item-4 {
     grid-row: 3;
     grid-column: 4;
-}
-
-aside h3 {
-    text-align: center;
 }
 
 /*---------- FOOTER -------------*/
