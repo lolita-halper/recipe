@@ -1045,16 +1045,10 @@ header img {
     grid-column: 2/3;
 }
 
-header p {
+.tacoParagraph {
     grid-column: 3/4;
     grid-row: 3/4;
     padding-top: 0;
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: 50%;
-    
-   
-
 }
 
 /*------------- MENU ------------*/
