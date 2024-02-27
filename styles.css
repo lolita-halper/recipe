@@ -578,11 +578,11 @@ nav a {
     /*display: grid;
     grid-template-columns: repeat(7,1fr);
     grid-template-rows: 100px 110px;
-    position: absolute;*/
+    position: absolute;
     overflow: visible;
     line-height: 1.35;
     top: 0;
-    width: 100%;
+    width: 100%;*/
 }
 
 nav h2 {
@@ -602,18 +602,15 @@ nav ul {
 nav img {
     visibility: visible;
 }
-
 nav li:hover {
     background-color: transparent;
 }
 .burgerMenu {
     display: none;
 }
-
 .burgerImg {
     display: none;
 }
-
 label span, input {
     display: none;
 }
@@ -930,7 +927,7 @@ footer img{
         width: 1280px;
     }
 /*--------- MAIN NAVIGATION -------------*/
-    nav {
+    /*nav {
         width: 1280px;
         grid-template-columns: repeat(9,1fr);
         grid-template-rows: 100px;
@@ -1062,7 +1059,7 @@ footer img{
         grid-column: 9/10;
     }
 
-
+*/
 
 /*------------- FORM ---------------*/
 
