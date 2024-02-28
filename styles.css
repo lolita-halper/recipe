@@ -573,13 +573,15 @@ nav {
 }
 
 nav a {
-    display: grid;
+    display: flex;
     overflow: visible;
     justify-content: center;
     align-items: center;
     line-height: 1.35;
     top: 0;
     width: 100%;
+    flex-wrap: wrap-reverse;
+    column-gap: 20px;
 }
 
 nav h2 {
@@ -622,15 +624,6 @@ nav li:nth-of-type(1) a {
     width: 75%;
     height: 80px;
 }
-/*nav img:nth-of-type(2) a {
-    grid-row: 2/3;
-    grid-column: 1/2;
-    justify-content: center;
-    align-items: start;
-    padding-top: 50px;
-    line-height: 1.15;
-}*/
-
 
 nav li:nth-of-type(2) {
     grid-row: 2/3;
@@ -639,29 +632,12 @@ nav li:nth-of-type(2) {
     align-items: center;
 }
 
-/*nav li:nth-of-type(2) a {
-    grid-row: 2/3;
-    grid-column: 1/2;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
-    line-height: 1.15;
-}*/
-
 nav li:nth-of-type(3) {
     grid-row: 2/3;
     grid-column: 2/3;
     justify-content: center;
     align-items: center;
 }
-/*nav a:nth-of-type(3) {
-    grid-row: 2/3;
-    grid-column: 2/3;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
-    line-height: 1.15;
-}*/
 
 nav li:nth-of-type(4) {
     grid-row: 2/3;
@@ -669,14 +645,6 @@ nav li:nth-of-type(4) {
     justify-content: center;
     align-items: center;
 }
-/*nav li:nth-of-type(4) a {
-    grid-row: 2/3;
-    grid-column: 3/4;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
-    line-height: 1.15;
-}*/
 
 nav li:nth-of-type(5) {
     grid-row: 2/3;
@@ -684,14 +652,6 @@ nav li:nth-of-type(5) {
     justify-content: center;
     align-items: center;
 }
-/*nav li:nth-of-type(5) a {
-    grid-row: 2/3;
-    grid-column: 4/5;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
-    line-height: 1.15;
-}*/
 
 nav li:nth-of-type(6) {
     grid-row: 2/3;
@@ -700,30 +660,12 @@ nav li:nth-of-type(6) {
     align-items: center;
 }
 
-/*li:nth-of-type(6) a {
-    grid-row: 2/3;
-    grid-column: 5/6;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
-    line-height: 1.15;
-}*/
-
 nav li:nth-of-type(7) {
     grid-row: 2/3;
     grid-column: 6/7;
     justify-content: center;
     align-items: center;
 }
-
-/*nav li:nth-of-type(7) a {
-    grid-row: 2/3;
-    grid-column: 6/7;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
-    line-height: 1.15;
-}*/
 
 nav li:nth-of-type(8) {
     grid-row: 2/3;
@@ -732,15 +674,6 @@ nav li:nth-of-type(8) {
     align-items: center;
 }
 
-/*nav li:nth-of-type(8) a {
-    grid-row: 2/3;
-    grid-column: 7/8;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
-    line-height: 1.15;
-}*/
-
 nav li:nth-of-type(9) {
     grid-row: 1/2;
     grid-column: 7/8;
@@ -748,14 +681,7 @@ nav li:nth-of-type(9) {
     align-items: center;
 }
 
-/*nav li:nth-of-type(9) a {
-    grid-row: 1/2;
-    grid-column: 7/8;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
-    line-height: 1.15;
-}*/
+
 
 /*------------- FORM ---------------*/
 
@@ -765,7 +691,7 @@ nav li:nth-of-type(9) {
     top: -100px;
     left: 35%;;
     position: fixed;
-    z-index: 3;
+    z-index: 1;
 }
 .search-bar button {
     z-index: 4;
@@ -932,9 +858,11 @@ footer img{
     }
 
     nav a {
-        display: grid;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        column-gap: 50px;
         overflow: visible;
-        padding-top: 10px;
+        padding-top: 15px;
     }
     
     nav ul {
@@ -961,7 +889,7 @@ footer img{
         grid-row: 1/2;
         grid-column: 1/2;
         position: static;
-        padding-left: 30px;
+        padding-left: 20px;
         padding-top: 10px;
         height: 100%;
         background-color: var(--orange)
@@ -1002,10 +930,19 @@ footer img{
         grid-column: 8/9;
     }
 
-    nav li:nth-of-type(9) {
+    /*nav li:nth-of-type(9) {
         grid-row: 1/2;
         grid-column: 9/10;
-    }
+        padding-right: 10px;
+    }*/
+ nav a:last-child {
+    grid-row: 1/2;
+    grid-column: 9/10;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 20px;
+ }
 
 /*------------- FORM ---------------*/
 
@@ -1257,13 +1194,5 @@ footer img{
 .eventEats {
     grid-row: 1;
 }
-
-
-
-
-
-
-
-
 
 }
