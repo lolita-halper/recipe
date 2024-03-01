@@ -356,6 +356,7 @@ dl {
     flex-flow: wrap;
     line-height: 1.45;
 }
+
 dt {
     flex-basis: 30%;
     margin-left: auto;
@@ -545,7 +546,7 @@ footer img{
     font-size: var(--navSpan-navA-menuLi-socLi-footer-font-size);
 }
 
-
+/*--------------------------------------------------------------------------------------------------*/
 /*-------------------------- MEDIA QUERY 768PX-----------------------------*/
 
 @media screen and (min-width: 768px) {
