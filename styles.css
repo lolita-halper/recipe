@@ -140,12 +140,10 @@ nav a {
     font-size: var(--navSpan-navA-menuLi-socLi-footer-font-size);
     font-family: var(--navSpan-navA-menuLi-socLi-footer-font);
 }
-
 nav h2 {
 	visibility: hidden;
 	height: 1px;
 }
-
 nav ul {
     text-align: center;
     overflow: hidden;
@@ -153,12 +151,10 @@ nav ul {
     transition: max-height .2s ease-out;
     line-height: 3;
 }
-
 nav img {
     width: 60px;
     visibility: hidden;
 }
-
 nav li:hover {
     background-color: var(--lt-blue-green);
 }
